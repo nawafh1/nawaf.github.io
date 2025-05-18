@@ -11,7 +11,7 @@
             background-color: tomato;
             color: white;
             border: 2px solid black;
-            margin: 20px;
+            margin: 20%;
             padding: 20px;
         }
 
@@ -43,7 +43,7 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: light; /* clean white */
+            /*  background-color: light;  clean white */
             color: #222; /* dark readable text */
         }
 
@@ -56,7 +56,8 @@
         .header {
             overflow: hidden;
             background-color: black;
-            padding: 20px 10px;
+            color: #f1f1f1;
+            padding: 0px 10px;
             z-index: 3;
         }
 
@@ -96,12 +97,12 @@
             padding: 30px;
             text-align: center;
         }
-
+/*
         .header {
             padding: 10px 16px;
             background: black;
             color: #f1f1f1;
-        }
+        }*/
 
         .content {
             padding: 16px;
@@ -193,13 +194,22 @@
 
                 <a href="index.html"><h1 style="color:white;">Nawaf Alsufiani</h1></a>
                 <div class="header-right">
-
-
                     <a href="https://www.linkedin.com/in/nawafalsufiani/" title="linkedin"><img src="images/linkedin.png" alt="linkedin" width="40" height="40"></a>
-                 </div>
+                    
+
+                </div>
+                <div class="header-right">
+                    
+                    <a href="#education"><span style="color:white;">Education</span></a>
+                    <a href="#SoftwareEngineering"><span style="color:white;">Software Engineering</span></a>
+                    <a href="#GameProgramming"><span style="color:white;">Game Programming</span></a>
+                    <a href="#Animation"><span style="color:white;">Animation</span></a>
+                    <a href="#Skills"><span style="color:white;">Skills</span></a>
+
+                </div>
 
             </div>
-            <span> Software Engineer & Animator</span>
+            <!--<span> Software Engineer & Animator</span>-->
     </header>
 
 
@@ -215,8 +225,10 @@
     <!-- Profile End-->
     <!--Education Start-->
 
-
+   
     <div class="center">
+        <a id="education"></a>
+        
         <h2>Education</h2>
         <div class="row">
             <div class="column">
@@ -535,6 +547,7 @@
     <!--Animation End-->
     <!--Skills Start-->
     <div class="center">
+        <!-- first row skills -->
         <h2>Skills</h2>
 
         <div class="tech-row">
@@ -570,10 +583,13 @@
                 <img src="images/Animatic.png" alt="animatic Logo">
                 <span>Animatic</span>
             </div>
-           
-       
-        </div>
+            <div class="tech-item">
+                <img src="images/Premiere.png" alt="Premiere Logo">
+                <span>Premiere</span>
+            </div>
 
+        </div>
+        <!-- second row skills -->
         <div class="tech-row">
 
             <div class="tech-item">
@@ -608,7 +624,22 @@
                 <img src="images/godot.png" alt="godot Logo">
                 <span>Godot</span>
             </div>
+            <div class="tech-item">
+                <img src="images/blender.png" alt="blender Logo">
+                <span>Blender</span>
+            </div>
         </div>
+        <!-- 3d row skills -->
+        <div class="tech-row">
+
+            <div class="tech-item">
+                <img src="images/gamemaker.png" alt="gamemaker Logo">
+                <span>Gamemaker</span>
+            </div>
+            
+           
+        </div>
+
 
     </div>
 
