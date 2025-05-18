@@ -61,6 +61,15 @@
             z-index: 3;
         }
 
+        .title {
+            overflow: hidden;
+            
+            color: #f1f1f1;
+            padding: 0px 10px;
+            z-index: 3;
+        }
+
+        
             .header a {
                 float: left;
                 color: black;
@@ -97,12 +106,7 @@
             padding: 30px;
             text-align: center;
         }
-/*
-        .header {
-            padding: 10px 16px;
-            background: black;
-            color: #f1f1f1;
-        }*/
+
 
         .content {
             padding: 16px;
@@ -195,11 +199,11 @@
                 <a href="index.html"><h1 style="color:white;">Nawaf Alsufiani</h1></a>
                 <div class="header-right">
                     <a href="https://www.linkedin.com/in/nawafalsufiani/" title="linkedin"><img src="images/linkedin.png" alt="linkedin" width="40" height="40"></a>
-                    
+
 
                 </div>
                 <div class="header-right">
-                    
+                    <a href="#about"><span style="color:white;">About</span></a>
                     <a href="#education"><span style="color:white;">Education</span></a>
                     <a href="#SoftwareEngineering"><span style="color:white;">Software Engineering</span></a>
                     <a href="#GameProgramming"><span style="color:white;">Game Programming</span></a>
@@ -214,7 +218,11 @@
 
 
     <!-- Header End-->
-    <!-- Profile start-->
+    <!-- About start-->
+    <dive class="title">
+        <a class="title" id="about"></a>
+    </dive>
+
     <div class="center">
         <img class="profile" src="images/nawaf.png" alt="linkedin" width="250" height="250">
         <p>
@@ -222,13 +230,18 @@
         </p>
 
     </div>
-    <!-- Profile End-->
+    <!-- About End-->
     <!--Education Start-->
 
-   
+    <dive class="title">
+        <a class="title" id="education"></a>
+    </dive>
+
+
+
     <div class="center">
-        <a id="education"></a>
-        
+
+
         <h2>Education</h2>
         <div class="row">
             <div class="column">
@@ -283,8 +296,11 @@
     <!--Education Ends-->
     <!--Software Engineering Start-->
 
- 
 
+
+    <dive class="title">
+        <a class="title" id="SoftwareEngineering"></a>
+    </dive>
 
     <div class="center">
         <h2>Software Engineering</h2>
@@ -303,9 +319,10 @@
                         <span>1 player</span>-->
                         <img src="images/time.png" title="Time it took to develop the project" width="16" height="16">
                         <span>4 weeks</span>
-                        <br>
+                        
                         <img src="images/technology.png" title="Technology used in the project" width="16" height="16">
-                        <span>ASP.NET C# MVC, SQL Server, HTML, CSS, Bootstrap, JavaScript, Visual Studio</span>
+                       
+                        <span>C#,ASP.NET MVC, SQL Server, HTML, CSS, Bootstrap, JavaScript, Visual Studio</span>
 
                         <h3>Attendance Tracking System (2024)</h3>
                         <p>
@@ -323,7 +340,7 @@
 
             </div>
 
-        
+
 
 
         </div>
@@ -334,9 +351,13 @@
     <!--Software Engineering End-->
     <!--Game programming Start-->
 
+    <dive class="title">
+        <a class="title" id="GameProgramming"></a>
+    </dive>
+
     <div class="center">
         <h2>Game Programming</h2>
-
+        <!-- row 1 -->
         <div class="row">
             <div class="column">
                 <div>
@@ -347,6 +368,8 @@
 
                             Your browser does not support the video tag.
                         </video><br />
+
+
                         <img src="images/peopleIcon.png" title="Number of players" width="16" height="16">
                         <span>1 player</span>
                         <img src="images/time.png" title="Time it took to develop the project" width="16" height="16">
@@ -355,9 +378,14 @@
                         <span>Unity</span>
 
                         <h3>Baddie Bomb Blobby (2025)</h3>
-                        <p>
-                            Baddie Bomb Blobby is an experimental 2D roguelike dating simulator designed to explore the integration of ChatGPT and Large Language Models (LLMs) in generating an artificial world. The development challenge was to create a framework capable of dynamically generating 40 levels using AI techniques. The roguelike genre, known for procedural level generation, was chosen to emphasize the game's adaptability and AI-driven content. The dating simulator component, being primarily text-based, allowed for real-time conversational interaction with ChatGPT. The 2D format was selected for its simplicity in generating environments at runtime. Combining these elements, Baddie Bomb Blobby delivers a unique experience where procedurally generated gameplay and AI-driven dialogue blend seamlessly in a dynamically evolving narrative.
-                        </p>
+                        <p><strong>Baddie Bomb Blobby</strong> is an experimental 2D roguelike dating simulator designed to explore the integration of ChatGPT and Large Language Models (LLMs) in generating an artificial world.</p>
+
+                        <p>The development challenge was to create a framework capable of dynamically generating <strong>40 levels</strong> using AI techniques. The <strong>roguelike genre</strong>, known for procedural level generation, was chosen to emphasize the game's adaptability and AI-driven content.</p>
+
+                        <p>The <strong>dating simulator component</strong>, being primarily text-based, allowed for real-time conversational interaction with ChatGPT. The <strong>2D format</strong> was selected for its simplicity in generating environments at runtime.</p>
+
+                        <p>Combining these elements, Baddie Bomb Blobby delivers a unique experience where <strong>procedurally generated gameplay</strong> and <strong>AI-driven dialogue</strong> blend seamlessly in a dynamically evolving narrative.</p>
+
 
 
 
@@ -370,6 +398,56 @@
 
 
             </div>
+
+            <div class="column">
+                <div>
+                    <div>
+                        <video width="350" height="350" controls loop>
+                            <source src="videos/Pacman3D.mp4" type="video/mp4">
+
+
+                            Your browser does not support the video tag.
+                        </video><br />
+                        <img src="images/peopleIcon.png" title="Number of players" width="16" height="16">
+                        <span>1 player</span>
+                        <img src="images/time.png" title="Time it took to develop the project" width="16" height="16">
+                        <span>6 weeks</span>
+                        <img src="images/technology.png" title="Technology used in the project" width="16" height="16">
+                        <span>Monogame, c#</span>
+
+                        <h3>Pacman 3D (2024)</h3>
+                        <p><strong>Pacman 3D</strong> is a 2D classic arcade game reimagined in stunning 3D. Navigate through the maze, eat pellets, avoid ghosts, and collect power-ups to clear each level. In this 3D version, you control Pac-Man as a 2D but in 3D such as walking in the mazes, eating pellets and avoiding the normal ghosts. Collect special power-up pellets to gain power and eat the ghosts once they become weak before they regain their power state.</p>
+
+                        <p><strong>Pacman:</strong> Is the hero Sphere who gets rid of the ghosts from the maze. He likes to eat when he is happy.</p>
+
+                        <p><strong>Ghosts:</strong> There are 3 colorful ghosts that will try to catch Pac-Man. If they touch Pac-Man, game over. Pac-Man defeats them by avoiding them or using power-ups to eat the ghosts.</p>
+
+                        <p><strong>Tips and Strategies:</strong></p>
+                        <ul>
+                            <li><strong>Learn the Maze:</strong> Familiarize yourself with controls and stay away from the ghosts’ areas.</li>
+                            <li><strong>Use Corners to Your Advantage:</strong> The maze has corners and narrow paths. Use them to avoid ghosts and trap them when they are vulnerable.</li>
+                            <li><strong>Time Your Power Pellets:</strong> Don’t rush to eat a Power Pellet unless it’s safe. Wait for the ghosts to get close, then turn the tables.</li>
+                        </ul>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+        </div>
+        <!-- row 1 end -->
+        <!-- row 2 start -->
+        <div class="row">
+            
 
             <div class="column">
                 <div>
@@ -388,11 +466,9 @@
                         <span>Game Maker</span>
 
                         <h3>Saving The Earth (2023)</h3>
-                        <p>
-                            This is a 2D shooting platformer game I developed using the GameMaker engine. The game features an enemy AI algorithm where enemies aim and shoot bullets directly at the player’s position, forcing players to stay on the move and avoid standing still for too long—otherwise, they will be hit quickly.
+                        <p><strong>Saving The Earth</strong> is a 2D shooting platformer game I developed using the GameMaker engine. The game features an enemy AI algorithm where enemies aim and shoot bullets directly at the player’s position, forcing players to stay on the move and avoid standing still for too long—otherwise, they will be hit quickly.</p>
 
-                            The story is set in a future where Earth is under threat from an alien invasion. Mars has already fallen, and Earth is next. The aliens seek to conquer Earth and steal its valuable natural resources. They refuse to share with humanity, viewing humans as greedy and unworthy of coexistence. In response, Earth sends a highly trained soldier to defend the planet and save humankind from the alien threat.
-                        </p>
+                        <p>The story is set in a future where Earth is under threat from an alien invasion. Mars has already fallen, and Earth is next. The aliens seek to conquer Earth and steal its valuable natural resources. They refuse to share with humanity, viewing humans as greedy and unworthy of coexistence.</p>
 
 
 
@@ -405,22 +481,21 @@
 
             </div>
 
-            <!--<div class="column" style="background-color:#bbb;">
-                <div>
-                    <button class="button button1">
-                        <h5> Unity 3D Game Comming Soon</h5>
-                        <small data-v-2dd8f34d=""> </small>
-                    </button>
-                </div>
-            </div>-->
+
 
         </div>
 
+        <!-- row 2 end -->
     </div>
 
 
     <!--Game programming End-->
     <!--Animation Start-->
+
+    <dive class="title">
+        <a class="title" id="Animation"></a>
+    </dive>
+
 
 
     <div class="center">
@@ -541,10 +616,13 @@
 
 
 
-
-
-
     <!--Animation End-->
+
+    <dive class="title">
+        <a class="title" id="Skills"></a>
+    </dive>
+
+
     <!--Skills Start-->
     <div class="center">
         <!-- first row skills -->
@@ -564,6 +642,15 @@
                 <span>JavaScript</span>
             </div>
             <div class="tech-item">
+                <img src="images/Bootstrap.png" alt="Sql Server Logo">
+                <span>Bootstrap</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/jquery.png" alt="jquery Logo">
+                <span>JQuery</span>
+            </div>
+
+            <div class="tech-item">
                 <img src="images/3DMAX.png" alt="3DMAX Logo">
                 <span>3D MAX</span>
             </div>
@@ -572,9 +659,10 @@
                 <span>MAYA</span>
             </div>
             <div class="tech-item">
-                <img src="images/Photoshop.png" alt="Photoshop Logo">
-                <span>Photoshop</span>
+                <img src="images/blender.png" alt="blender Logo">
+                <span>Blender</span>
             </div>
+            
             <div class="tech-item">
                 <img src="images/AfterEffects.png" alt="AfterEffects Logo">
                 <span>After Effects</span>
@@ -591,7 +679,14 @@
         </div>
         <!-- second row skills -->
         <div class="tech-row">
-
+            <div class="tech-item">
+                <img src="images/Photoshop.png" alt="Photoshop Logo">
+                <span>Photoshop</span>
+            </div>
+            <div class="tech-item">
+            <img src="images/VisualStudio.png" alt="VisualStudio Logo">
+            <span>Visual Studio</span>
+            </div>
             <div class="tech-item">
                 <img src="images/c.png" alt="c Logo">
                 <span>C</span>
@@ -604,40 +699,45 @@
                 <img src="images/csharp.png" alt="csharp Logo">
                 <span>C#</span>
             </div>
-            <div class="tech-item">
-                <img src="images/java.png" alt="java Logo">
-                <span>JAVA</span>
-            </div>
+
             <div class="tech-item">
                 <img src="images/asp.png" alt="ASP.NET MVC Logo">
                 <span>ASP.NET MVC</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/sqlServer.png" alt="Sql Server Logo">
+                <span>SqlServer</span>
             </div>
             <div class="tech-item">
                 <img src="images/Postgresql.png" alt="Postgresql Logo">
                 <span>Postgresql</span>
             </div>
             <div class="tech-item">
+                <img src="images/java.png" alt="java Logo">
+                <span>JAVA</span>
+            </div>
+            <div class="tech-item">
                 <img src="images/unity.png" alt="unity Logo">
                 <span>UNITY</span>
             </div>
             <div class="tech-item">
-                <img src="images/godot.png" alt="godot Logo">
-                <span>Godot</span>
-            </div>
-            <div class="tech-item">
-                <img src="images/blender.png" alt="blender Logo">
-                <span>Blender</span>
-            </div>
-        </div>
-        <!-- 3d row skills -->
-        <div class="tech-row">
-
-            <div class="tech-item">
                 <img src="images/gamemaker.png" alt="gamemaker Logo">
                 <span>Gamemaker</span>
             </div>
-            
+
+
+
+
+        </div>
+        <!-- 3d row skills -->
+        <div class="tech-row">
            
+        
+            <div class="tech-item">
+                <img src="images/monogame.png" alt="monogame Logo">
+                <span>MonoGame</span>
+            </div>
+
         </div>
 
 
@@ -648,7 +748,7 @@
 
 
     <script>
-    HTMLHRElement
+        HTMLHRElement
         window.onscroll = function () { myFunction() };
 
         var header = document.getElementById("myHeader");
