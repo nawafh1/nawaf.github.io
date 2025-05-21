@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        .divBodyparagraph {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20%;
+            padding: 20px;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .my-div {
+            border: 1px solid black;
+        }
+
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: auto; /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            /*  background-color: light;  clean white */
+            color: #222; /* dark readable text */
+        }
+
+
+
+
+        a {
+            text-decoration: none;
+        }
+        .header {
+            overflow: hidden;
+            background-color: black;
+            color: #f1f1f1;
+            padding: 0px 10px;
+            z-index: 3;
+        }
+
+        .title {
+            overflow: hidden;
+            
+            color: #f1f1f1;
+            padding: 0px 10px;
+            z-index: 3;
+        }
+
+        
+            .header a {
+                float: left;
+                color: black;
+                 
+                padding: 10px;
+                text-decoration: none;
+                
+                line-height: 25px;
+                border-radius: 4px;
+            }
+
+                .header a.logo {
+                    
+                }
+
+                .header a:hover {
+                    background-color: grey;
+                    color: blue;
+                }
+
+                .header a.active {
+                    background-color: dodgerblue;
+                    color: white;
+                }
+
+        .header-right {
+            float: right;
+        }
+
+
+
+        .top-container {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+
+
+        .content {
+            padding: 16px;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+            .sticky + .content {
+                padding-top: 102px;
+            }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .profile {
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+             
+        }
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+        }
+
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #04AA6D;
+        }
+
+            .button1:hover {
+                background-color: #04AA6D;
+                color: white;
+            }
+
+
+        .tech-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .tech-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+            .tech-item img {
+                width: 80px;
+                height: auto;
+            }
+
+            .tech-item span {
+                margin-top: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                color: black;
+            }
+
+
+
+    </style>
+</head>
+<body><dive>
+    <!-- Header start-->
+    <header class="header" id="myHeader">
+        <dive class="center">
+            <div class="header" id="myHeader">
+
+                <a href="index.html"><h1 style="color:white;">Nawaf Alsufiani</h1></a>
+                <div class="header-right">
+                    <a href="https://www.linkedin.com/in/nawafalsufiani/" title="linkedin"><img src="images/linkedin.png" alt="linkedin" width="40" height="40"></a>
+
+
+                </div>
+                <div class="header-right">
+                    <a href="#about"><span style="color:white;">About</span></a>
+                    <a href="#education"><span style="color:white;">Education</span></a>
+                    <a href="#SoftwareEngineering"><span style="color:white;">Software Engineering</span></a>
+                    <a href="#GameProgramming"><span style="color:white;">Game Programming</span></a>
+                    <a href="#Animation"><span style="color:white;">Animation</span></a>
+                    <a href="#Skills"><span style="color:white;">Skills</span></a>
+
+                </div>
+
+            </div>
+            <!--<span> Software Engineer & Animator</span>-->
+    </header>
+
+
+    <!-- Header End-->
+    <!-- About start-->
+    <dive class="title">
+        <a class="title" id="about"></a>
+    </dive>
+
+    <div class="center">
+        <img class="profile" src="images/nawaf.png" alt="linkedin" width="250" height="250">
+        <p>
+            Software developer with a strong background in game programming and digital art, including both 2D and 3D animation. I believe that a well-designed software architecture is essential to building high-quality, maintainable projects. My goal is to combine creativity and engineering to build engaging, efficient, and user-focused digital experiences.
+        </p>
+
+    </div>
+    <!-- About End-->
+    <!--Education Start-->
+
+    <dive class="title">
+        <a class="title" id="education"></a>
+    </dive>
+
+
+
+    <div class="center">
+
+
+        <h2>Education</h2>
+        <div class="row">
+            <div class="column">
+                <div>
+                    <button class="button button1">
+                        <h5>Arizona State University, Tempe, AZ</h5>
+                        <small data-v-2dd8f34d="">Master of Computer Science </small>
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="column">
+                <div>
+                    <button class="button button1">
+                        <h5>Arizona State University, Tempe, AZ</h5>
+                        <small data-v-2dd8f34d="">Bachelor of Fine Arts Animation</small>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="center">
+        <div class="row">
+            <div class="column">
+                <div>
+                    <button class="button button1">
+                        <h5>Arizona State University, Tempe, AZ</h5>
+                        <small data-v-2dd8f34d="">Bachelor of Arts in Media Arts and Sciences</small>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="column">
+                <div>
+                    <button class="button button1">
+                        <h5>Arizona State University, Tempe, AZ</h5>
+                        <small data-v-2dd8f34d="">Certificate in Computer Gaming</small>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Education Ends-->
+    <!--Software Engineering Start-->
+
+
+
+    <dive class="title">
+        <a class="title" id="SoftwareEngineering"></a>
+    </dive>
+
+    <div class="center">
+        <h2>Software Engineering</h2>
+
+        <div class="row">
+            <div class="column">
+                <div>
+                    <div>
+                        <video width="350" height="350" controls loop>
+                            <source src="videos/cardReader.mp4" type="video/mp4">
+
+
+                            Your browser does not support the video tag.
+                        </video><br />
+                        <!--<img src="images/peopleIcon.png" title="Number of players" width="16" height="16">
+                        <span>1 player</span>-->
+                        <img src="images/time.png" title="Time it took to develop the project" width="16" height="16">
+                        <span>4 weeks</span>
+                        
+                        <img src="images/technology.png" title="Technology used in the project" width="16" height="16">
+                       
+                        <span>C#,ASP.NET MVC, SQL Server, HTML, CSS, Bootstrap, JavaScript, Visual Studio</span>
+
+                        <h3>Attendance Tracking System (2024)</h3>
+                        <p>
+                            Developed a full-stack attendance tracking system using ASP.NET C# MVC and SQL Server, integrating card reader technology for real-time attendance logging. The front end was built with HTML, CSS, Bootstrap, and JavaScript to ensure a responsive and user-friendly interface. Implemented secure authentication and role-based access control for both users and administrators. Reporting features were also developed to analyze attendance data and generate insightful trends.
+                        </p>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <!--Software Engineering End-->
+    <!--Game programming Start-->
+
+    <dive class="title">
+        <a class="title" id="GameProgramming"></a>
+    </dive>
+
+    <div class="center">
+        <h2>Game Programming</h2>
+        <!-- row 1 -->
+        <div class="row">
+            <div class="column">
+                <div>
+                    <div>
+                        <video width="350" height="350" controls loop>
+                            <source src="videos/Baddie_Bomb_Blobby Trailer_2.mp4" type="video/mp4">
+
+
+                            Your browser does not support the video tag.
+                        </video><br />
+
+
+                        <img src="images/peopleIcon.png" title="Number of players" width="16" height="16">
+                        <span>1 player</span>
+                        <img src="images/time.png" title="Time it took to develop the project" width="16" height="16">
+                        <span>2 weeks</span>
+                        <img src="images/technology.png" title="Technology used in the project" width="16" height="16">
+                        <span>Unity</span>
+
+                        <h3>Baddie Bomb Blobby (2025)</h3>
+                        <p><strong>Baddie Bomb Blobby</strong> is an experimental 2D roguelike dating simulator designed to explore the integration of ChatGPT and Large Language Models (LLMs) in generating an artificial world.</p>
+
+                        <p>The development challenge was to create a framework capable of dynamically generating <strong>40 levels</strong> using AI techniques. The <strong>roguelike genre</strong>, known for procedural level generation, was chosen to emphasize the game's adaptability and AI-driven content.</p>
+
+                        <p>The <strong>dating simulator component</strong>, being primarily text-based, allowed for real-time conversational interaction with ChatGPT. The <strong>2D format</strong> was selected for its simplicity in generating environments at runtime.</p>
+
+                        <p>Combining these elements, Baddie Bomb Blobby delivers a unique experience where <strong>procedurally generated gameplay</strong> and <strong>AI-driven dialogue</strong> blend seamlessly in a dynamically evolving narrative.</p>
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="column">
+                <div>
+                    <div>
+                        <video width="350" height="350" controls loop>
+                            <source src="videos/Pacman3D.mp4" type="video/mp4">
+
+
+                            Your browser does not support the video tag.
+                        </video><br />
+                        <img src="images/peopleIcon.png" title="Number of players" width="16" height="16">
+                        <span>1 player</span>
+                        <img src="images/time.png" title="Time it took to develop the project" width="16" height="16">
+                        <span>6 weeks</span>
+                        <img src="images/technology.png" title="Technology used in the project" width="16" height="16">
+
+
+                        <span>Monogame, c#</span>
+
+                        <h3>Pacman 3D (2024)</h3>
+                        <p><strong>Pacman 3D</strong> is a 2D classic arcade game reimagined in stunning 3D. Navigate through the maze, eat pellets, avoid ghosts, and collect power-ups to clear each level. In this 3D version, you control Pac-Man as a 2D but in 3D such as walking in the mazes, eating pellets and avoiding the normal ghosts. Collect special power-up pellets to gain power and eat the ghosts once they become weak before they regain their power state.</p>
+
+                        <p><strong>Pacman:</strong> Is the hero Sphere who gets rid of the ghosts from the maze. He likes to eat when he is happy.</p>
+
+                        <p><strong>Ghosts:</strong> There are 3 colorful ghosts that will try to catch Pac-Man. If they touch Pac-Man, game over. Pac-Man defeats them by avoiding them or using power-ups to eat the ghosts.</p>
+
+                        <p><strong>Tips and Strategies:</strong></p>
+                        <ul>
+                            <li><strong>Learn the Maze:</strong> Familiarize yourself with controls and stay away from the ghosts’ areas.</li>
+                            <li><strong>Use Corners to Your Advantage:</strong> The maze has corners and narrow paths. Use them to avoid ghosts and trap them when they are vulnerable.</li>
+                            <li><strong>Time Your Power Pellets:</strong> Don’t rush to eat a Power Pellet unless it’s safe. Wait for the ghosts to get close, then turn the tables.</li>
+
+                        </ul>
+                        <a href="files/PacmanUserManual.pdf" target="_blank">User Manual</a>
+                        <br><br>
+                        <a href="https://tinyurl.com/3d4pdr9y" target="_blank">Code</a>
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+        </div>
+        <!-- row 1 end -->
+        <!-- row 2 start -->
+        <div class="row">
+            
+
+            <div class="column">
+                <div>
+                    <div>
+                        <video width="350" height="350" controls loop>
+                            <source src="videos/SavingTheEarth.mp4" type="video/mp4">
+
+
+                            Your browser does not support the video tag.
+                        </video><br />
+                        <img src="images/peopleIcon.png" title="Number of players" width="16" height="16">
+                        <span>1 player</span>
+                        <img src="images/time.png" title="Time it took to develop the project" width="16" height="16">
+                        <span>2 weeks</span>
+                        <img src="images/technology.png" title="Technology used in the project" width="16" height="16">
+                        <span>Game Maker</span>
+
+                        <h3>Saving The Earth (2023)</h3>
+                        <p><strong>Saving The Earth</strong> is a 2D shooting platformer game I developed using the GameMaker engine. The game features an enemy AI algorithm where enemies aim and shoot bullets directly at the player’s position, forcing players to stay on the move and avoid standing still for too long—otherwise, they will be hit quickly.</p>
+
+                        <p>The story is set in a future where Earth is under threat from an alien invasion. Mars has already fallen, and Earth is next. The aliens seek to conquer Earth and steal its valuable natural resources. They refuse to share with humanity, viewing humans as greedy and unworthy of coexistence.</p>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+        <!-- row 2 end -->
+    </div>
+
+
+    <!--Game programming End-->
+    <!--Animation Start-->
+
+    <dive class="title">
+        <a class="title" id="Animation"></a>
+    </dive>
+
+
+
+    <div class="center">
+        <h2>Animation</h2>
+        <div class="row">
+            <div class="column">
+                <div>
+                    <div>
+                        <video width="350" height="350" controls loop>
+                            <source src="videos/dragonBurnCity.mp4" type="video/mp4">
+
+                            Your browser does not support the video tag.
+                        </video><br />
+                        <img src="images/animationType.png" title="animation type" width="16" height="16">
+                        <span>2D</span>
+                        <img src="images/time.png" title="Time it took to develop the project" width="16" height="16">
+                        <span>1 day</span>
+                        <img src="images/technology.png" title="Technology used in the project" width="16" height="16">
+                        <span>Adobe After Effect</span>
+
+                        <h3>Dragon in City</h3>
+                        <p>
+                            This is a 2D animation which was done in Adobe After Effect. It is about a dragon destroying the city.
+                            The work was a little challenging in the transition between day light to night then burning city in fire.
+
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="column">
+                <div>
+                    <div>
+                        <video width="350" height="350" controls loop>
+                            <source src="videos/horse_animation.mp4" type="video/mp4">
+
+                            Your browser does not support the video tag.
+                        </video><br />
+                        <img src="images/animationType.png" title="animation type" width="16" height="16">
+                        <span>2D</span>
+                        <img src="images/time.png" title="Time it took to develop the project" width="16" height="16">
+                        <span>1 day</span>
+                        <img src="images/technology.png" title="Technology used in the project" width="16" height="16">
+                        <span>Adobe Photoshop</span>
+
+                        <h3>Horse Animation</h3>
+                        <p>
+                            This is a 2D animation which was done in Photoshop. It is about horse running in Arizona.
+                            I learned in this project the timing and placing background with both front-ground and middle ground.
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="center">
+
+        <div class="row">
+            <div class="column">
+                <div>
+                    <div>
+                        <video width="350" height="350" controls loop>
+                            <source src="videos/sadDragon.mp4" type="video/mp4">
+
+                            Your browser does not support the video tag.
+                        </video><br />
+                        <img src="images/animationType.png" title="animation type" width="16" height="16">
+                        <span>2D</span>
+                        <img src="images/time.png" title="Time it took to develop the project" width="16" height="16">
+                        <span>1 day</span>
+                        <img src="images/technology.png" title="Technology used in the project" width="16" height="16">
+                        <span>Adobe After Effect</span>
+
+                        <h3>Sad Dragon</h3>
+                        <p>
+                            The artwork is about a sad dragon flying in the sky with a bird included as a side character.
+                            I used an open-source dragon sound online and combined it with the bird sound to get a natural feeling.
+
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="column">
+                <div>
+                    <div>
+                        <video width="350" height="350" controls loop>
+                            <source src="videos/bird_animation.mp4" type="video/mp4">
+
+                            Your browser does not support the video tag.
+                        </video><br />
+                        <img src="images/animationType.png" title="animation type" width="16" height="16">
+                        <span>2D</span>
+                        <img src="images/time.png" title="Time it took to develop the project" width="16" height="16">
+                        <span>1 day</span>
+                        <img src="images/technology.png" title="Technology used in the project" width="16" height="16">
+                        <span>Adobe Photoshop</span>
+
+                        <h3>Bird Animation</h3>
+                        <p>
+                            A bird flying in the sky is wonderful, but without adding challenge to it, is not great. So, adding rain while the bird flying gives it a message to the viewer that the wings are strong toward the heavy rains.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Animation End-->
+
+    <dive class="title">
+        <a class="title" id="Skills"></a>
+    </dive>
+
+
+    <!--Skills Start-->
+    <div class="center">
+        <!-- first row skills -->
+        <h2>Skills</h2>
+
+        <div class="tech-row">
+            <div class="tech-item">
+                <img src="images/html.png" alt="HTML5 Logo">
+                <span>HTML</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/css.png" alt="CSS3 Logo">
+                <span>CSS</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/JavaScript.png" alt="JavaScript Logo">
+                <span>JavaScript</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/Bootstrap.png" alt="Sql Server Logo">
+                <span>Bootstrap</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/jquery.png" alt="jquery Logo">
+                <span>JQuery</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="images/3DMAX.png" alt="3DMAX Logo">
+                <span>3D MAX</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/maya.png" alt="maya Logo">
+                <span>MAYA</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/blender.png" alt="blender Logo">
+                <span>Blender</span>
+            </div>
+            
+            <div class="tech-item">
+                <img src="images/AfterEffects.png" alt="AfterEffects Logo">
+                <span>After Effects</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/Animatic.png" alt="animatic Logo">
+                <span>Animatic</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/Premiere.png" alt="Premiere Logo">
+                <span>Premiere</span>
+            </div>
+
+        </div>
+        <!-- second row skills -->
+        <div class="tech-row">
+            <div class="tech-item">
+                <img src="images/Photoshop.png" alt="Photoshop Logo">
+                <span>Photoshop</span>
+            </div>
+            <div class="tech-item">
+            <img src="images/VisualStudio.png" alt="VisualStudio Logo">
+            <span>Visual Studio</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/c.png" alt="c Logo">
+                <span>C</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/c++.png" alt="c++ Logo">
+                <span>C++</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/csharp.png" alt="csharp Logo">
+                <span>C#</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="images/asp.png" alt="ASP.NET MVC Logo">
+                <span>ASP.NET MVC</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/sqlServer.png" alt="Sql Server Logo">
+                <span>SqlServer</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/Postgresql.png" alt="Postgresql Logo">
+                <span>Postgresql</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/java.png" alt="java Logo">
+                <span>JAVA</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/unity.png" alt="unity Logo">
+                <span>UNITY</span>
+            </div>
+            <div class="tech-item">
+                <img src="images/gamemaker.png" alt="gamemaker Logo">
+                <span>Gamemaker</span>
+            </div>
+
+
+
+
+        </div>
+        <!-- 3d row skills -->
+        <div class="tech-row">
+           
+        
+            <div class="tech-item">
+                <img src="images/monogame.png" alt="monogame Logo">
+                <span>MonoGame</span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!--Skills Ends-->
+
+
+    <script>
+        HTMLHRElement
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</body>
+</html>
