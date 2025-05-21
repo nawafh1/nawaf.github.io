@@ -30,7 +30,9 @@
 
 
 
-<body style="background: linear-gradient(to bottom, #f0f0f0, #fdfdfd); min-height: 100vh;">
+<body class="d-flex flex-column min-vh-100">
+
+
 
 
 <!-- Header Section -->
@@ -47,9 +49,10 @@
       <nav>
         <a href="#about" class="text-white mx-2">About</a>
         <a href="#education" class="text-white mx-2">Education</a>
-        <a href="#skills" class="text-white mx-2">Skills</a>
-		<a href="#projects" class="text-white mx-2">Projects</a>
+        <a href="#projects" class="text-white mx-2">Projects</a>
+		<a href="#skills" class="text-white mx-2">Skills</a>
         <a href="#contact" class="text-white mx-2">Contact</a>
+		<a href="https://www.linkedin.com/in/nawafalsufiani/" title="linkedin"><img src="images/linkedin.png" alt="linkedin" width="40" height="40"></a>
       </nav>
     </div>
 
@@ -61,29 +64,39 @@
 </header>
 
 
-<div class="container" style="background-color: white;">
 
-<!-- About Section -->
-<section id="about" class="my-5">
-  <div class="container text-center">
-    <h2>About</h2>
-       <img src="images/nawaf.png" class="img-fluid rounded-circle d-block mx-auto" style="max-width: 250px; height: auto;" alt="Profile Image">
-       <p >Software developer with a strong background in game programming and digital art, including both 2D and 3D animation. I believe that a well-designed software architecture is essential to building high-quality, maintainable projects. My goal is to combine creativity and engineering to build engaging, efficient, and user-focused digital experiences.
-       </p>
-</div>
   
+
+
+<div class="container" style="background: linear-gradient(to bottom, #888888, #bbbbbb);">
+
+
+
+<section class="my-5 text-center" id="about" style="background: linear-gradient(to bottom, #f0f0f0, #f0f0f0);">
+
+<h2 class="mb-4 bg-white text-dark">About</h2>
+  <div class="container text-center">
+    
+	
+       <img src="images/nawaf.png" class="img-fluid rounded-circle d-block mx-auto" style="max-width: 250px; height: auto;" alt="Profile Image">
+       <p class="text-start">Software developer with a strong background in game programming and digital art, including both 2D and 3D animation. I believe that a well-designed software architecture is essential to building high-quality, maintainable projects. My goal is to combine creativity and engineering to build engaging, efficient, and user-focused digital experiences.
+       </p>
+	
+</br>
+  </div>
 </section>
 
 
-
-
 <!-- Education Section -->
-<section class="my-5" id="education">
+<section class="my-5 text-center" id="education" style="background: linear-gradient(to bottom, #f0f0f0, #f0f0f0);">
+
+<h2 class="mb-4 bg-white text-dark">Education</h2>
   <div class="container text-center">
-    <h2 class="mb-4">Education</h2>
+    
+
     <ul class="list-unstyled">
 
-      <li class="mb-4 p-3 bg-light rounded shadow-sm">
+      <li class="mb-4 p-3 bg-white rounded shadow-sm">
         <div class="d-flex align-items-center">
           <img src="images/asu-logo.png" alt="ASU logo" title="Arizona State University" class="img-fluid me-3" style="max-height: 60px;">
           <strong class="mb-0">Arizona State University – Master of Computer Science <span class="text-danger"> In progress</span></strong> 
@@ -97,7 +110,7 @@
         </div>
       </li>
 
-      <li class="mb-4 p-3 bg-light rounded shadow-sm">
+      <li class="mb-4 p-3 bg-white rounded shadow-sm">
         <div class="d-flex align-items-center">
           <img src="images/asu-logo.png" alt="ASU logo" title="Arizona State University" class="img-fluid me-3" style="max-height: 60px;">
           <strong class="mb-0">Arizona State University – Bachelor of Arts in Media Arts and Sciences</strong>
@@ -112,6 +125,7 @@
       </li>
 
     </ul>
+	</br>
   </div>
 </section>
 
@@ -119,11 +133,132 @@
 
 
 
+<!-- Projects Section with Tabs -->
+<section class="my-5 text-center" id="projects" style="background: linear-gradient(to bottom, #f0f0f0, #f0f0f0);">
+<h2 class="mb-4 bg-white text-dark">Projects</h2>
+<div class="container text-center">
+    
+	
+   <!-- Tabs Header -->
+  <ul class="nav nav-tabs" id="projectTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="software-tab" data-bs-toggle="tab" data-bs-target="#softwareDngineering" type="button" role="tab">Software Engineering</button>
+    </li>
+	<li class="nav-item" role="presentation">
+      <button class="nav-link" id="gameDevelopment-tab" data-bs-toggle="tab" data-bs-target="#gameDevelopment" type="button" role="tab">Game Development</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="animation-tab" data-bs-toggle="tab" data-bs-target="#animation" type="button" role="tab">Animation</button>
+    </li>
+  </ul>
+
+
+
+
+
+  <!-- Projects Section -->
+  <div class="tab-content mt-3" id="projectTabsContent" >
+    <!-- Software Dngineering Projects -->
+    <div class="tab-pane fade show active" id="softwareDngineering" role="tabpanel">
+      <div class="row">
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="software_project1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="software_project2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+	
+	 <!-- Game Development Projects -->
+    <div class="tab-pane fade show" id="gameDevelopment" role="tabpanel">
+      <div class="row">
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="software_project1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="software_project2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+	
+	
+                            
+
+    <!-- Animation Projects -->
+    <div class="tab-pane fade " id="animation" role="tabpanel">
+      <div class="row">
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="videos/bird_animation.mp4" type="video/mp4">
+
+                            Your browser does not support the video tag.
+                        </video><br />
+                        
+
+                    <p><strong>Bird Animation</strong> <br>
+                   <small><em>Completed: 2024 | Duration: 1 day | Type: 2D</em></small>
+                    </p>
+                    <p class="text-start"> A bird flying in the sky is wonderful, but without adding challenge to it, it’s not great. Adding rain gives the message that the bird's wings are strong against adversity.
+                   </p>
+
+                   <p><strong>Technologies Used:</strong></p>
+                   <div class="d-flex flex-wrap gap-2">
+                  <img src="images/Photoshop.png" title="Photoshop" width="40" height="40">
+                  <!-- more tools -->
+                  </div>
+		</div>
+		
+        <div class="col-md-6">
+          <video controls width="100%">
+            <source src="videos/dragonBurnCity.mp4" type="video/mp4">
+
+                            Your browser does not support the video tag.
+                        </video><br />
+                        
+
+                    <p><strong>Dragon in City</strong> <br>
+                   <small><em>Completed: 2024 | Duration: 1 day | Type: 2D</em></small>
+                    </p>
+                    <p class="text-start">This is a 2D animation which was done in Adobe After Effect. It is about a dragon destroying the city.The work was a little challenging in the transition between day light to night then burning city in fire.
+					</p>
+
+                   <p><strong>Technologies Used:</strong></p>
+                   <div class="d-flex flex-wrap gap-2">
+                  <img src="images/Photoshop.png" title="Photoshop" width="40" height="40">
+				  <img src="images/AfterEffects.png" title="After Effects" width="40" height="40">
+                  <!-- more tools -->
+                  </div>
+
+		</div>
+		
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    
+
 
 <!-- Skills Section -->
-<section id="skills" class="my-5">
+<section class="my-5 text-center" id="skills" style="background: linear-gradient(to bottom, #f0f0f0, #f0f0f0);">
+<h2 class="mb-4 bg-white text-dark">Skills</h2>
   <div class="container text-center">
-    <h2>Skills</h2>
+    
     <div class="row">
 
       <!-- Skill Items -->
@@ -236,67 +371,14 @@
 </section>
 
 
-<!-- Projects Section with Tabs -->
-<section  id="projects" class="my-5">
-  <div class="container text-center">
-    <h2>Projects</h2>
-   <!-- Tabs Header -->
-  <ul class="nav nav-tabs" id="projectTabs" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="software-tab" data-bs-toggle="tab" data-bs-target="#software" type="button" role="tab">Software Eng.</button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="animation-tab" data-bs-toggle="tab" data-bs-target="#animation" type="button" role="tab">Animation</button>
-    </li>
-  </ul>
-
-  <!-- Tabs Content -->
-  <div class="tab-content mt-3" id="projectTabsContent">
-    <!-- Software Projects -->
-    <div class="tab-pane fade show active" id="software" role="tabpanel">
-      <div class="row">
-        <div class="col-md-6">
-          <video controls width="100%">
-            <source src="software_project1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="col-md-6">
-          <video controls width="100%">
-            <source src="software_project2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    </div>
-
-    <!-- Animation Projects -->
-    <div class="tab-pane fade" id="animation" role="tabpanel">
-      <div class="row">
-        <div class="col-md-6">
-          <video controls width="100%">
-            <source src="animation_project1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="col-md-6">
-          <video controls width="100%">
-            <source src="animation_project2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 <!-- contact Section -->
 
 
-<section id="contact" class="my-5">
+<section class="my-5 text-center" id="contact" style="background: linear-gradient(to bottom, #f0f0f0, #f0f0f0);">
+
+<h2 class="mb-4 bg-white text-dark">Contact</h2>
   <div class="container text-center">
-    <h2>Contact</h2>
+
 
     <form action="https://formsubmit.co/nawaftechnology@outlook.com" method="POST" class="mt-4" style="max-width: 600px; margin: 0 auto;">
       <!-- Name -->
@@ -324,16 +406,16 @@
   </div>
 </section>
 
-
-
-
-
-<!-- Footer -->
-<footer class="bg-dark text-white p-3">
-  <div class="text-center">
-	  <small>© 2025 Nawaf Alsufiani. All rights reserved.</small>
 </div>
-</footer>
+
+
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white p-3 mt-auto">
+    <div class="text-center">
+      <small>© 2025 Nawaf Alsufiani. All rights reserved.</small>
+    </div>
+  </footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
